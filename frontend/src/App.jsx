@@ -4,7 +4,7 @@ import Landing from "./pages/Landing";
 import MultiStepForm from "./pages/MultiStepForm";
 import Preview from "./pages/Preview";
 
-function App() {
+export default function App() {
   return (
     <BrowserRouter>
       <ResumeProvider>
@@ -17,5 +17,3 @@ function App() {
     </BrowserRouter>
   );
 }
-
-export default App;

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ResumeContext } from "./ResumeContext.js";
+import { ResumeContext } from "./ResumeContext";
 
 export const ResumeProvider = ({ children }) => {
   const [formData, setFormData] = useState({
@@ -8,7 +8,7 @@ export const ResumeProvider = ({ children }) => {
     experience: [],
     skills: [],
     summary: "",
-    template: ""
+    template: "classic", // default
   });
 
   return (
